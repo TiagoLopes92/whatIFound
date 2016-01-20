@@ -1,0 +1,22 @@
+<div class="insert-bar" >
+  <md-fab-toolbar layout="column" md-direction="left" class="md-fab-bottom-right">
+      <md-fab-trigger class="align-with-text">
+        <md-button aria-label="menu" class="md-fab md-primary">
+          <span class="fa fa-plus "></span>
+        </md-button>
+      </md-fab-trigger>
+      <md-toolbar>
+        <md-fab-actions class="md-toolbar-tools">
+          <form name="titleBookForm">
+            <md-input-container>
+              <input name="title" ng-model="title" required>
+              <div ng-messages="titleBookForm.title.$error">
+                <div ng-message="required">This is required!</div>
+              </div>
+            </md-input-container>
+          </form>
+        </md-fab-actions>
+      </md-toolbar>
+  </md-fab-toolbar>
+</div>
+
